@@ -27,15 +27,13 @@
     
     }
   
-    function startTime()
-    {
-        for(let i=0;i<4;i++)
-        {
-          setTimeout(()=>{
-        document.getElementById('countdown').innerHTML = i
-      }, (3-i)*1000)
-        }
-  
+    var v = Math.floor(Math.random() * 9)+2;
+    function startTime() {
+      for (let i = 0; i < c+1; i++) {
+        setTimeout(() => {
+          document.getElementById('countdown').innerHTML = i
+        }, (v - i) * 1000)
+      }
         setTimeout(()=>{
   
        if(myTime==undefined)
